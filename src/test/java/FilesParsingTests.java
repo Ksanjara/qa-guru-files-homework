@@ -25,7 +25,7 @@ public class FilesParsingTests {
 
     @DisplayName("Проверка что zip архив содержит необходимые файлы")
     @Test
-    void ZipParsingTest() throws Exception {
+    void zipParsingTest() throws Exception {
         try (ZipInputStream zis = new ZipInputStream(
                 getClass().getResourceAsStream(workWithFiles.getZipName())
         )) {
